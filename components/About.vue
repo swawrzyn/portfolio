@@ -22,7 +22,7 @@
         </p>
         <p class="mb-2">
           My recent interests include
-          <a href="https://teachyourselfcs.com/" target="_blank">Teaching Myself Computer Science</a>, taking deep dives
+          <a href="https://teachyourselfcs.com/" rel="noreferrer" target="_blank">Teaching Myself Computer Science</a>, taking deep dives
           into the world of ML/AI and getting to know <a href="https://flutter.dev/" rel="noreferrer" target="_blank">Flutter</a>.
         </p>
       </div>
