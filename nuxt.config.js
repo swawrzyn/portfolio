@@ -53,9 +53,13 @@ export default {
     '@nuxt/content',
   ],
 
-  router: {
-    base: '/portfolio/',
-  },
+  // router: {
+  //   base: '/portfolio/',
+  // },
+
+  // image: {
+  //   staticFilename: 'images/[name]-[hash][ext]'
+  // },
 
   googleFonts: {
     download: true,

@@ -2,6 +2,7 @@
   <ui-content-section title="About">
     <div class="flex items-center justify-center flex-wrap flex-row-reverse md:flex-row">
       <div class="w-full md:w-1/2 font-sans">
+        <p class="mb-2">Hi, I'm Stefan Wawrzyn, and here's a little about me.</p>
         <p class="mb-2">
           In a previous life, I graduated from the
           <a href="https://en.wikipedia.org/wiki/Royal_Military_College_of_Canada" target="_blank"
@@ -20,7 +21,7 @@
           Shanghai and had a blast. I haven't looked back since.
         </p>
         <p class="mb-2">
-          My recent interests include learning
+          My recent interests include
           <a href="https://teachyourselfcs.com/" target="_blank">Teaching Myself Computer Science</a>, taking deep dives
           into the world of ML/AI and getting to know <a href="https://flutter.dev/" target="_blank">Flutter</a>.
         </p>

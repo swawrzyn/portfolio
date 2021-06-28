@@ -1,5 +1,5 @@
 <template>
-  <nav class="bg-transparent transition-colors duration-75" :class="{ 'bg-white': menuOpen }">
+  <nav class="bg-transparent transition-colors duration-75 relative" :class="{ 'bg-white': menuOpen }">
     <div class="max-w-screen-xl mx-auto sm:px-6 lg:px-8">
       <div class="relative flex items-center justify-between h-16">
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -76,7 +76,7 @@
 
     <!-- Mobile menu, show/hide based on menu state. -->
     <transition name="fade">
-      <div v-if="menuOpen" class="sm:hidden bg-white" id="mobile-menu">
+      <div v-if="menuOpen" class="sm:hidden absolute z-50 bg-white w-full" id="mobile-menu">
         <div class="px-2 pt-2 pb-3 space-y-1 text-off-black">
           <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
           <nuxt-link

@@ -12,8 +12,8 @@
             </div>
             <div class="flex flex-col items-center text-center justify-center">
               <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">{{name}}</h2>
-              <div class="w-12 h-1 bg-off-black rounded mt-2 mb-4"></div>
-              <p class="text-base"
+              <div class="w-12 h-1 sm:text-sm text-base bg-off-black rounded mt-2 mb-4"></div>
+              <p class="sm:text-sm text-base"
                 >{{subtitle}}</p
               >
             </div>
@@ -39,7 +39,7 @@
             "
           >
             <span class="mb-4"><b>Technologies:</b> {{technologies.join(', ')}}</span>
-            <p class="leading-relaxed text-lg mb-4"
+            <p class="leading-relaxed sm:text-md text-lg mb-4"
               >{{text}}</p
             >
           </div>
