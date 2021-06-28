@@ -5,12 +5,7 @@
         class="font-sans"
         v-for="project in projects"
         :key="project.name"
-        :name="project.name"
-        :imageName="project.imageName"
-        :logoName="project.logoName"
-        :subtitle="project.subtitle"
-        :technologies="project.technologies"
-        :text="project.text"
+        :project="project"
       />
     </div>
   </ui-content-section>
@@ -26,6 +21,7 @@ export default class Projects extends Vue {
       name: 'Fantastic Funding',
       url: 'https://www.fantasticfunding.com',
       imageName: 'ff.png',
+      imgAlt: 'Screenshot of the Fantastic Funding website',
       logoName: 'ff-logo',
       subtitle: 'A platform for tech creators to sell their products in a fair and eqitable way.',
       technologies: ['Ruby On Rails', 'Postgresql', 'Vue', 'Nuxt', 'AWS'],
@@ -35,6 +31,7 @@ export default class Projects extends Vue {
       name: 'DuanDuanZu',
       url: 'none',
       imageName: 'ddz.webp',
+      imgAlt: 'Screenshot of the DuanDuanZu website',
       logoName: 'ddz-logo',
       subtitle: 'Short-term commerical space rental based in China.',
       technologies: ['Django', 'Postgresql', 'Redis', 'Vue', 'WeChat Mini Program', 'AWS'],

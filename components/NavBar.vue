@@ -47,10 +47,10 @@
           </button>
         </div>
         <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-between">
-          <nuxt-link to="/" class="flex-shrink-0 flex items-center text-off-black cursor-pointer">
+          <div class="flex-shrink-0 flex items-center text-off-black cursor-pointer">
             <Logo class="w-20" />
             <NameLogo class="hidden lg:block mx-4 w-64" />
-          </nuxt-link>
+          </div>
           <div class="hidden sm:block sm:ml-6">
             <div class="flex space-x-4">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->

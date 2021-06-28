@@ -1,5 +1,5 @@
 <template>
-  <a :href="url" target="_blank" class="no-underline">
+  <a :href="skill.url" target="_blank" rel="noreferrer" class="no-underline">
     <div
       class="
         flex flex-col
@@ -16,7 +16,7 @@
       "
     >
       <div class="w-14 h-14" v-html="iconLocation" />
-      <span class="mt-4">{{ name }}</span>
+      <span class="mt-4">{{ skill.name }}</span>
     </div>
   </a>
 </template>
@@ -26,11 +26,13 @@ import { Component, Inject, Model, Prop, Provide, Vue, Watch } from 'nuxt-proper
 
 @Component
 export default class ContentSection extends Vue {
-  @Prop({ default: 'Python' }) readonly name!: string
-  @Prop({ default: 'https://www.google.com' }) readonly url!: string
+  @Prop({ required: true }) readonly skill!: {
+    name: string
+    url: string
+  }
 
   get iconLocation() {
-    return require(`static/images/icons/${this.name.toLowerCase()}.svg?raw`)
+    return require(`static/images/icons/${this.skill.name.toLowerCase()}.svg?raw`)
   }
 }
 </script>

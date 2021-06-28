@@ -1,7 +1,7 @@
 <template>
   <ui-content-section title="Skills">
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8">
-      <ui-skill v-for="skill in skills" :key="skill.name" :name="skill.name" :url="skill.url" />
+      <ui-skill v-for="skill in skills" :key="skill.name" :skill="skill" />
     </div>
   </ui-content-section>
 </template>

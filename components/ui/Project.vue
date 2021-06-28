@@ -3,7 +3,7 @@
     <div class="flex flex-col">
       <div class="w-full mx-auto">
         <div class="overflow-hidden shadow-md">
-          <nuxt-img :src="imgSrc" format="webp" loading="lazy" height="789" width="1441" sizes="sm:100vw md:50vw lg:1441px" />
+          <nuxt-img :src="imgSrc" format="webp" loading="lazy" height="789" width="1441" sizes="sm:100vw md:50vw lg:1441px" :alt="project.imgAlt" />
         </div>
         <div class="flex flex-col sm:flex-row mt-10">
           <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
@@ -11,10 +11,9 @@
               <div v-html="logoLocation" />
             </div>
             <div class="flex flex-col items-center text-center justify-center">
-              <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">{{name}}</h2>
-              <div class="w-12 h-1 sm:text-sm text-base bg-off-black rounded mt-2 mb-4"></div>
+              <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">{{project.name}}</h2>
               <p class="sm:text-sm text-base"
-                >{{subtitle}}</p
+                >{{project.subtitle}}</p
               >
             </div>
           </div>
@@ -38,9 +37,9 @@
               items-start
             "
           >
-            <span class="mb-4"><b>Technologies:</b> {{technologies.join(', ')}}</span>
+            <span class="mb-4"><b>Technologies:</b> {{project.technologies.join(', ')}}</span>
             <p class="leading-relaxed sm:text-md text-lg mb-4"
-              >{{text}}</p
+              >{{project.text}}</p
             >
           </div>
         </div>
@@ -54,20 +53,24 @@ import { Component, Inject, Model, Prop, Provide, Vue, Watch } from 'nuxt-proper
 
 @Component
 export default class Project extends Vue {
-  @Prop({ required: true }) readonly name!: string
-  @Prop({ required: true }) readonly imageName!: string
-  @Prop({ required: true }) readonly logoName!: string
-  @Prop({ required: true }) readonly subtitle!: string
-  @Prop({ required: true }) readonly technologies!: string[]
-  @Prop({ required: true }) readonly text!: string
+  @Prop({ required: true }) readonly project!: {
+      name: string,
+      url: string,
+      imageName: string,
+      imgAlt: string,
+      logoName: string,
+      subtitle: string,
+      technologies: string[],
+      text: string,
+    }
 
 
   get imgSrc() {
-    return `/images/${this.imageName}`
+    return `/images/${this.project.imageName}`
   }
 
   get logoLocation() {
-    return require(`static/images/${this.logoName}.svg?raw`)
+    return require(`static/images/${this.project.logoName}.svg?raw`)
   }
 }
 </script>

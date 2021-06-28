@@ -1,5 +1,5 @@
 <template>
-  <a :href="contact.value" target="_blank" class="w-full px-4 flex justify-start items-center h-32 bg-gray-100 no-underline cursor-pointer shadow-sm hover:shadow-md transition-shadow duration-150">
+  <a :href="contact.value" rel="noreferrer" target="_blank" class="w-full px-4 flex justify-start items-center h-32 bg-gray-100 no-underline cursor-pointer shadow-sm hover:shadow-md transition-shadow duration-150">
     <div class="w-1/5 flex items-center justify-center">
       <div class="w-14 h-14" v-html="iconLocation" />
     </div>
