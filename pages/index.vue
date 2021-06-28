@@ -1,9 +1,17 @@
 <template>
-  <Tutorial/>
+  <Tutorial />
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
+import {
+  Component,
+  Inject,
+  Model,
+  Prop,
+  Provide,
+  Vue,
+  Watch,
+} from "nuxt-property-decorator";
 
-export default Vue.extend({})
+export class Index extends Vue {}
 </script>

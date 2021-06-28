@@ -1379,24 +1379,6 @@
     webpack-node-externals "^3.0.0"
     webpackbar "^4.0.0"
 
-"@nuxtjs/axios@^5.13.6":
-  version "5.13.6"
-  resolved "https://registry.nlark.com/@nuxtjs/axios/download/@nuxtjs/axios-5.13.6.tgz#6f4bbd98a3a7799a5d2c0726c6ad2a98aa111881"
-  integrity sha1-b0u9mKOneZpdLAcmxq0qmKoRGIE=
-  dependencies:
-    "@nuxtjs/proxy" "^2.1.0"
-    axios "^0.21.1"
-    axios-retry "^3.1.9"
-    consola "^2.15.3"
-    defu "^5.0.0"
-
-"@nuxtjs/proxy@^2.1.0":
-  version "2.1.0"
-  resolved "https://registry.nlark.com/@nuxtjs/proxy/download/@nuxtjs/proxy-2.1.0.tgz#fa7715a11d237fa1273503c4e9e137dd1bf5575b"
-  integrity sha1-+ncVoR0jf6EnNQPE6eE33Rv1V1s=
-  dependencies:
-    http-proxy-middleware "^1.0.6"
-
 "@nuxtjs/tailwindcss@^4.2.0":
   version "4.2.0"
   resolved "https://registry.nlark.com/@nuxtjs/tailwindcss/download/@nuxtjs/tailwindcss-4.2.0.tgz#ea05a42e55010ad9b9a600031999b364e1e28b77"
@@ -1567,13 +1549,6 @@
     "@types/clean-css" "*"
     "@types/relateurl" "*"
     "@types/uglify-js" "*"
-
-"@types/http-proxy@^1.17.5":
-  version "1.17.6"
-  resolved "https://registry.nlark.com/@types/http-proxy/download/@types/http-proxy-1.17.6.tgz#62dc3fade227d6ac2862c8f19ee0da9da9fd8616"
-  integrity sha1-Ytw/reIn1qwoYsjxnuDanan9hhY=
-  dependencies:
-    "@types/node" "*"
 
 "@types/js-yaml@^4.0.0":
   version "4.0.1"
@@ -2299,20 +2274,6 @@ autoprefixer@^9.6.1:
     num2fraction "^1.2.2"
     postcss "^7.0.32"
     postcss-value-parser "^4.1.0"
-
-axios-retry@^3.1.9:
-  version "3.1.9"
-  resolved "https://registry.npm.taobao.org/axios-retry/download/axios-retry-3.1.9.tgz?cache=0&sync_timestamp=1600409072660&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Faxios-retry%2Fdownload%2Faxios-retry-3.1.9.tgz#6c30fc9aeb4519aebaec758b90ef56fa03fe72e8"
-  integrity sha1-bDD8mutFGa667HWLkO9W+gP+cug=
-  dependencies:
-    is-retry-allowed "^1.1.0"
-
-axios@^0.21.1:
-  version "0.21.1"
-  resolved "https://registry.npm.taobao.org/axios/download/axios-0.21.1.tgz?cache=0&sync_timestamp=1608609188405&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Faxios%2Fdownload%2Faxios-0.21.1.tgz#22563481962f4d6bde9a76d516ef0e5d3c09b2b8"
-  integrity sha1-IlY0gZYvTWvemnbVFu8OXTwJsrg=
-  dependencies:
-    follow-redirects "^1.10.0"
 
 babel-loader@^8.2.2:
   version "8.2.2"
@@ -3996,7 +3957,7 @@ etag@^1.8.1, etag@~1.8.1:
   resolved "https://registry.npm.taobao.org/etag/download/etag-1.8.1.tgz#41ae2eeb65efa62268aebfea83ac7d79299b0887"
   integrity sha1-Qa4u62XvpiJorr/qg6x9eSmbCIc=
 
-eventemitter3@^4.0.0, eventemitter3@^4.0.4:
+eventemitter3@^4.0.4:
   version "4.0.7"
   resolved "https://registry.npm.taobao.org/eventemitter3/download/eventemitter3-4.0.7.tgz?cache=0&sync_timestamp=1598517778642&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Feventemitter3%2Fdownload%2Feventemitter3-4.0.7.tgz#2de9b68f6528d5644ef5c59526a1b4a07306169f"
   integrity sha1-Lem2j2Uo1WRO9cWVJqG0oHMGFp8=
@@ -4243,11 +4204,6 @@ flush-write-stream@^1.0.0:
   dependencies:
     inherits "^2.0.3"
     readable-stream "^2.3.6"
-
-follow-redirects@^1.0.0, follow-redirects@^1.10.0:
-  version "1.14.1"
-  resolved "https://registry.nlark.com/follow-redirects/download/follow-redirects-1.14.1.tgz?cache=0&sync_timestamp=1620555521328&other_urls=https%3A%2F%2Fregistry.nlark.com%2Ffollow-redirects%2Fdownload%2Ffollow-redirects-1.14.1.tgz#d9114ded0a1cfdd334e164e6662ad02bfd91ff43"
-  integrity sha1-2RFN7Qoc/dM04WTmZirQK/2R/0M=
 
 for-in@^1.0.2:
   version "1.0.2"
@@ -4868,26 +4824,6 @@ http-errors@~1.7.2:
     statuses ">= 1.5.0 < 2"
     toidentifier "1.0.0"
 
-http-proxy-middleware@^1.0.6:
-  version "1.3.1"
-  resolved "https://registry.nlark.com/http-proxy-middleware/download/http-proxy-middleware-1.3.1.tgz#43700d6d9eecb7419bf086a128d0f7205d9eb665"
-  integrity sha1-Q3ANbZ7st0Gb8IahKND3IF2etmU=
-  dependencies:
-    "@types/http-proxy" "^1.17.5"
-    http-proxy "^1.18.1"
-    is-glob "^4.0.1"
-    is-plain-obj "^3.0.0"
-    micromatch "^4.0.2"
-
-http-proxy@^1.18.1:
-  version "1.18.1"
-  resolved "https://registry.npm.taobao.org/http-proxy/download/http-proxy-1.18.1.tgz#401541f0534884bbf95260334e72f88ee3976549"
-  integrity sha1-QBVB8FNIhLv5UmAzTnL4juOXZUk=
-  dependencies:
-    eventemitter3 "^4.0.0"
-    follow-redirects "^1.0.0"
-    requires-port "^1.0.0"
-
 https-browserify@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npm.taobao.org/https-browserify/download/https-browserify-1.0.0.tgz#ec06c10e0a34c0f2faf199f7fd7fc78fffd03c73"
@@ -5305,11 +5241,6 @@ is-plain-obj@^2.0.0:
   resolved "https://registry.npm.taobao.org/is-plain-obj/download/is-plain-obj-2.1.0.tgz?cache=0&sync_timestamp=1618601451957&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fis-plain-obj%2Fdownload%2Fis-plain-obj-2.1.0.tgz#45e42e37fccf1f40da8e5f76ee21515840c09287"
   integrity sha1-ReQuN/zPH0Dajl927iFRWEDAkoc=
 
-is-plain-obj@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.npm.taobao.org/is-plain-obj/download/is-plain-obj-3.0.0.tgz?cache=0&sync_timestamp=1618601451957&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fis-plain-obj%2Fdownload%2Fis-plain-obj-3.0.0.tgz#af6f2ea14ac5a646183a5bbdb5baabbc156ad9d7"
-  integrity sha1-r28uoUrFpkYYOlu9tbqrvBVq2dc=
-
 is-plain-object@^2.0.3, is-plain-object@^2.0.4:
   version "2.0.4"
   resolved "https://registry.npm.taobao.org/is-plain-object/download/is-plain-object-2.0.4.tgz?cache=0&sync_timestamp=1599667334890&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fis-plain-object%2Fdownload%2Fis-plain-object-2.0.4.tgz#2c163b3fafb1b606d9d17928f05c2a1c38e07677"
@@ -5329,11 +5260,6 @@ is-resolvable@^1.0.0:
   version "1.1.0"
   resolved "https://registry.npm.taobao.org/is-resolvable/download/is-resolvable-1.1.0.tgz#fb18f87ce1feb925169c9a407c19318a3206ed88"
   integrity sha1-+xj4fOH+uSUWnJpAfBkxijIG7Yg=
-
-is-retry-allowed@^1.1.0:
-  version "1.2.0"
-  resolved "https://registry.npm.taobao.org/is-retry-allowed/download/is-retry-allowed-1.2.0.tgz?cache=0&sync_timestamp=1618646105828&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fis-retry-allowed%2Fdownload%2Fis-retry-allowed-1.2.0.tgz#d778488bd0a4666a3be8a1482b9f2baafedea8b4"
-  integrity sha1-13hIi9CkZmo76KFIK58rqv7eqLQ=
 
 is-ssh@^1.3.0:
   version "1.3.3"
@@ -6098,7 +6024,7 @@ micromatch@^3.1.10, micromatch@^3.1.4:
     snapdragon "^0.8.1"
     to-regex "^3.0.2"
 
-micromatch@^4.0.0, micromatch@^4.0.2, micromatch@^4.0.4:
+micromatch@^4.0.0, micromatch@^4.0.4:
   version "4.0.4"
   resolved "https://registry.npm.taobao.org/micromatch/download/micromatch-4.0.4.tgz?cache=0&sync_timestamp=1618054737342&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fmicromatch%2Fdownload%2Fmicromatch-4.0.4.tgz#896d519dfe9db25fce94ceb7a500919bf881ebf9"
   integrity sha1-iW1Rnf6dsl/OlM63pQCRm/iB6/k=
@@ -6483,6 +6409,16 @@ num2fraction@^1.2.2:
   version "1.2.2"
   resolved "https://registry.npm.taobao.org/num2fraction/download/num2fraction-1.2.2.tgz#6f682b6a027a4e9ddfa4564cd2589d1d4e669ede"
   integrity sha1-b2gragJ6Tp3fpFZM0lidHU5mnt4=
+
+nuxt-property-decorator@^2.9.1:
+  version "2.9.1"
+  resolved "https://registry.nlark.com/nuxt-property-decorator/download/nuxt-property-decorator-2.9.1.tgz#60fd87b64d85519b091374c7ea4c0ce1979f6afa"
+  integrity sha1-YP2Htk2FUZsJE3TH6kwM4Zefavo=
+  dependencies:
+    vue-class-component "^7.2.6"
+    vue-property-decorator "^9.0.0"
+    vuex-class "^0.3.2"
+    vuex-module-decorators "^1.0.1"
 
 nuxt@^2.15.7:
   version "2.15.7"
@@ -8199,11 +8135,6 @@ require-directory@^2.1.1:
   resolved "https://registry.npm.taobao.org/require-directory/download/require-directory-2.1.1.tgz#8c64ad5fd30dab1c976e2344ffe7f792a6a6df42"
   integrity sha1-jGStX9MNqxyXbiNE/+f3kqam30I=
 
-requires-port@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npm.taobao.org/requires-port/download/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
-  integrity sha1-kl0mAdOaxIXgkc8NpcbmlNw9yv8=
-
 resolve-from@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npm.taobao.org/resolve-from/download/resolve-from-3.0.0.tgz#b22c7af7d9d6881bc8b6e653335eebcb0a188748"
@@ -9614,6 +9545,11 @@ vm-browserify@^1.0.1:
   resolved "https://registry.npm.taobao.org/vm-browserify/download/vm-browserify-1.1.2.tgz?cache=0&sync_timestamp=1572870686253&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvm-browserify%2Fdownload%2Fvm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
   integrity sha1-eGQcSIuObKkadfUR56OzKobl3aA=
 
+vue-class-component@^7.2.6:
+  version "7.2.6"
+  resolved "https://registry.npm.taobao.org/vue-class-component/download/vue-class-component-7.2.6.tgz#8471e037b8e4762f5a464686e19e5afc708502e4"
+  integrity sha1-hHHgN7jkdi9aRkaG4Z5a/HCFAuQ=
+
 vue-client-only@^2.0.0:
   version "2.1.0"
   resolved "https://registry.nlark.com/vue-client-only/download/vue-client-only-2.1.0.tgz#1a67a47b8ecacfa86d75830173fffee3bf8a4ee3"
@@ -9646,6 +9582,11 @@ vue-no-ssr@^1.1.1:
   version "1.1.1"
   resolved "https://registry.npm.taobao.org/vue-no-ssr/download/vue-no-ssr-1.1.1.tgz#875f3be6fb0ae41568a837f3ac1a80eaa137b998"
   integrity sha1-h1875vsK5BVoqDfzrBqA6qE3uZg=
+
+vue-property-decorator@^9.0.0:
+  version "9.1.2"
+  resolved "https://registry.npm.taobao.org/vue-property-decorator/download/vue-property-decorator-9.1.2.tgz#266a2eac61ba6527e2e68a6933cfb98fddab5457"
+  integrity sha1-JmourGG6ZSfi5oppM8+5j92rVFc=
 
 vue-router@^3.5.1:
   version "3.5.2"
@@ -9691,6 +9632,16 @@ vue@^2.6.12:
   version "2.6.14"
   resolved "https://registry.nlark.com/vue/download/vue-2.6.14.tgz#e51aa5250250d569a3fbad3a8a5a687d6036e235"
   integrity sha1-5RqlJQJQ1Wmj+606ilpofWA24jU=
+
+vuex-class@^0.3.2:
+  version "0.3.2"
+  resolved "https://registry.npm.taobao.org/vuex-class/download/vuex-class-0.3.2.tgz#c7e96a076c1682137d4d23a8dcfdc63f220e17a8"
+  integrity sha1-x+lqB2wWghN9TSOo3P3GPyIOF6g=
+
+vuex-module-decorators@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.npm.taobao.org/vuex-module-decorators/download/vuex-module-decorators-1.0.1.tgz#d34dafb5428a3636f1c26d3d014c15fc9659ccd0"
+  integrity sha1-002vtUKKNjbxwm09AUwV/JZZzNA=
 
 vuex@^3.6.2:
   version "3.6.2"

@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'stefan-portfolio',
+    title: 'Portfolio | Stefan Wawrzyn',
     htmlAttrs: {
       lang: 'en'
     },
@@ -46,8 +46,9 @@ export default {
     '@nuxt/content',
   ],
 
-  // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
+  router: {
+    base: '/portfolio/'
+  },
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},
