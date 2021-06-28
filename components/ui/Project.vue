@@ -2,8 +2,8 @@
   <div class="text-gray-600 body-font">
     <div class="flex flex-col">
       <div class="w-full mx-auto">
-        <div class="h-128 overflow-hidden shadow-md">
-          <nuxt-img :src="imgSrc" format="webp" />
+        <div class="overflow-hidden shadow-md">
+          <nuxt-img :src="imgSrc" format="webp" loading="lazy" height="789" width="1441" sizes="sm:100vw md:50vw lg:1441px" />
         </div>
         <div class="flex flex-col sm:flex-row mt-10">
           <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">

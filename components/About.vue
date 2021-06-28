@@ -27,7 +27,7 @@
         </p>
       </div>
       <div class="w-full md:w-1/2 flex items-center justify-center my-8 lg:my-0">
-        <nuxt-picture class="w-3/4 md:w-1/2 shadow-md" format="webp" src="/images/stefan.png" />
+        <nuxt-img class="w-3/4 md:w-1/2 shadow-md" format="webp" src="/images/stefan.png" height="797" width="700" sizes="sm:100vw md:50vw lg:800px" v-lazy-load />
       </div>
     </div>
   </ui-content-section>

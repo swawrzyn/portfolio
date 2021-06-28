@@ -51,6 +51,9 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    ['nuxt-lazy-load', {
+      directiveOnly: true,
+    }]
   ],
 
   // router: {
@@ -62,9 +65,10 @@ export default {
   // },
 
   googleFonts: {
+    display: 'swap',
     download: true,
     families: {
-      Inter: [300, 500, 700, 900]
+      Inter: [300, 700]
     }
   },
 
@@ -73,4 +77,12 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+
+  render: {
+    // Setting up cache for 'static' directory - a year in milliseconds
+    // https://web.dev/uses-long-cache-ttl
+    static: {
+      maxAge: 60 * 60 * 24 * 365 * 1000,
+    },
+  },
 }
