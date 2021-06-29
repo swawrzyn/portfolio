@@ -21,7 +21,7 @@ jobs:
           node-version: ${{ matrix.node }}
 
       - name: Install dependencies
-        run: yarn
+        run: yarn install --​silent
 
       - name: Generate
         run: yarn run generate --modern --quiet
