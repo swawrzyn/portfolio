@@ -48,11 +48,6 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    // https://go.nuxtjs.dev/content
-    '@nuxt/content',
-    ['nuxt-lazy-load', {
-      directiveOnly: true,
-    }]
   ],
 
   // router: {
@@ -70,9 +65,6 @@ export default {
       Inter: [300, 700]
     }
   },
-
-  // Content module configuration: https://go.nuxtjs.dev/config-content
-  content: {},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
