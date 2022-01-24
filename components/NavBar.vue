@@ -2,7 +2,7 @@
   <nav class="bg-transparent transition-colors duration-75 relative" :class="{ 'bg-white': menuOpen }">
     <div class="max-w-screen-xl mx-auto sm:px-6 lg:px-8">
       <div class="relative flex items-center justify-between h-16">
-        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+        <div class="absolute inset-y-0 left-0 flex items-center md:hidden">
           <!-- Mobile menu button-->
           <button
             @click="menuOpen = !menuOpen"
@@ -15,8 +15,7 @@
               rounded-md
               text-gray-800
               hover:text-black
-              focus:outline-none
-              focus:ring-2 focus:ring-inset focus:ring-white
+              focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white
             "
             aria-controls="mobile-menu"
             aria-expanded="false"
@@ -46,31 +45,54 @@
             </svg>
           </button>
         </div>
-        <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-between">
-          <div class="flex-shrink-0 flex items-center text-off-black cursor-pointer">
-            <Logo class="w-20" />
-            <NameLogo class="hidden lg:block mx-4 w-64" />
+        <div class="flex-1 flex items-center justify-center md:items-stretch md:justify-between">
+          <div class="flex-shrink-0 flex items-center justify-end lg:justify-center text-off-black cursor-pointer">
+            <Logo class="hidden md:block w-20" />
+            <NameLogo class="w-48 lg:block mx-4 lg:w-64" />
           </div>
-          <div class="hidden sm:block sm:ml-6">
+          
+          <div class="hidden md:block sm:ml-6">
             <div class="flex space-x-4">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-              <nuxt-link to="#about" class="nav-link text-gray-800 hover:text-black px-3 py-2 text-sm font-light no-underline"
+              <a
+                href="/stefan_wawrzyn_resume.pdf"
+                target="_blank"
+                class="nav-link text-gray-800 hover:text-black px-3 py-2 text-sm font-bold no-underline"
+                >Resume</a
+              >
+              <nuxt-link
+                to="#about"
+                class="nav-link text-gray-800 hover:text-black px-3 py-2 text-sm font-light no-underline"
                 >About</nuxt-link
               >
-              <nuxt-link to="#skills" class="nav-link text-gray-800 hover:text-black px-3 py-2 text-sm font-light no-underline"
+              <nuxt-link
+                to="#skills"
+                class="nav-link text-gray-800 hover:text-black px-3 py-2 text-sm font-light no-underline"
                 >Skills</nuxt-link
               >
 
-              <nuxt-link to="#projects" class="nav-link text-gray-800 hover:text-black px-3 py-2 text-sm font-light no-underline"
+              <nuxt-link
+                to="#projects"
+                class="nav-link text-gray-800 hover:text-black px-3 py-2 text-sm font-light no-underline"
                 >Projects</nuxt-link
               >
 
-              <nuxt-link to="#contact" class="nav-link text-gray-800 hover:text-black px-3 py-2 text-sm font-light no-underline"
+              <nuxt-link
+                to="#contact"
+                class="nav-link text-gray-800 hover:text-black px-3 py-2 text-sm font-light no-underline"
                 >Contact</nuxt-link
               >
             </div>
           </div>
         </div>
+        <div class="md:hidden absolute right-5">
+            <a
+              href="/stefan_wawrzyn_resume.pdf"
+              target="_blank"
+              class="nav-link text-gray-800 font-bold hover:text-black px-3 py-2 text-sm no-underline"
+              >Resume</a
+            >
+          </div>
       </div>
     </div>
 

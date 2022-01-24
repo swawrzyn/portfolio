@@ -21,6 +21,14 @@ export default class Skills extends Vue {
       url: 'https://www.djangoproject.com'
     },
     {
+      name: 'Flask',
+      url: 'https://flask.palletsprojects.com'
+    },
+    {
+      name: 'FastAPI',
+      url: 'https://fastapi.tiangolo.com'
+    },
+    {
       name: 'Postgresql',
       url: 'https://www.postgresql.org'
     },
@@ -55,6 +63,10 @@ export default class Skills extends Vue {
     {
       name: 'Rails',
       url: 'https://www.rubyonrails.org'
+    },
+    {
+      name: 'Java',
+      url: 'https://www.java.com'
     },
     {
       name: 'Docker',
